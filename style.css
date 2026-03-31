@@ -143,7 +143,7 @@ body {
 #firstpage {
   position: relative;
   width: 100%;
-  height: 800px;
+  height: 920px;
   overflow: hidden;
 }
 
@@ -220,16 +220,17 @@ body {
 /* 기본 스타일 */
 #introduction {
   width: 100%;
-  height: 820px;
+  height: 940px;
   background-color: #000000;
   display: flex;
 }
 
 .introduction-newjeans {
   margin-left: 100px;
-  margin-top: 50px;
+  margin-top: 100px;
   margin-bottom: 50px;
-  width: 540px;
+  height: 700px;
+  width: 500px;
   position: relative;
 }
 
@@ -256,7 +257,7 @@ body {
   padding-top: 10px;
   color: #ffffff;
   font-size: 23px;
-  line-height: 2;
+  line-height: 2.2;
 }
 
 @media (max-width: 768px) {
@@ -336,7 +337,7 @@ body {
 /* //introduction */
 #Contents {
   width: 100%;
-  height: 820px;
+  height: 940px;
   background-color: #dfdfdf;
   display: flex;
 }
@@ -344,11 +345,13 @@ body {
   width: 50%;
   background-color: #000000;
   color: #ffffff;
+  padding-top: 80px;
 }
 .Contents-lift-box > h1 {
   font-size: 160px;
   text-align: right;
-  margin-right: 7px;
+  margin-right: 0;
+  line-height: 1;
 }
 .Contents-lift-text {
   font-size: 45px;
@@ -357,18 +360,23 @@ body {
 }
 .Contents-lift-text > p {
   font-weight: 600;
-  padding-top: 100px;
 }
 .Contents-lift-text > .st1 {
-  padding-top: 50px;
+  padding-top: 60px;
 }
 .Contents-lift-text > .st1:hover {
   color: #0059e1;
   cursor: default;
 }
+.Contents-lift-text > .st3 {
+  padding-top: 100px;
+}
 .Contents-lift-text > .st3:hover {
   color: #b0cfe2;
   cursor: default;
+}
+.Contents-lift-text > .st5 {
+  padding-top: 100px;
 }
 .Contents-lift-text > .st5:hover {
   color: #fdca00;
@@ -378,11 +386,13 @@ body {
   width: 50%;
   background-color: #ffffff;
   color: #000000;
+  padding-top: 80px;
 }
 .Contents-right-box > h1 {
   font-size: 160px;
   text-align: left;
-  margin-right: 7px;
+  margin-left: 0;
+  line-height: 1;
 }
 .Contents-right-text {
   font-size: 45px;
@@ -391,6 +401,8 @@ body {
 }
 .Contents-right-text > p {
   font-weight: 600;
+}
+.Contents-right-text > .st2 {
   padding-top: 130px;
 }
 .Contents-right-text > .st2:hover {
@@ -452,7 +464,7 @@ body {
 
 #NewJeans {
   width: 100%;
-  height: 820px;
+  height: 940px;
   background-color: #ffffff;
 }
 .NewJeans-main-logo {
@@ -582,7 +594,7 @@ body {
 /* //NewJeans */
 #OMG {
   width: 100%;
-  height: 820px;
+  height: 940px;
   background-image: url(./images/OMG-bg-img.png);
   background-repeat: no-repeat;
   background-size: cover;
@@ -604,8 +616,8 @@ body {
   font-size: 65px;
   font-weight: 900;
   color: #ffffff;
-  text-shadow: -2px -2px 0 #303030, /* 왼쪽 위 */ 2px -2px 0 #303030,
-    /* 오른쪽 위 */ -2px 2px 0 #303030, /* 왼쪽 아래 */ 2px 2px 0 #303030; /* 오른쪽 아래 */
+  text-shadow: -2px -2px 0 #303030, 2px -2px 0 #303030,
+    -2px 2px 0 #303030, 2px 2px 0 #303030;
 }
 
 .OMG-img-box > img {
@@ -778,21 +790,26 @@ body {
 
 #GetUp {
   width: 100%;
-  height: 880px;
+  height: 1000px;
   background-color: #b0cfe2;
   display: flex;
+  padding: 10px;
+  gap: 10px;
 }
 .container1 {
   width: 33%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 .container1-1 {
   display: flex;
+  gap: 10px;
+  flex: 2;
 }
 .box1 {
   border-radius: 10px;
-  margin: 20px;
-  width: 55%;
-  height: 190px;
+  width: 60%;
   background-image: url(./images/box1.jpeg);
   background-repeat: no-repeat;
   background-position: 100%;
@@ -800,9 +817,7 @@ body {
 }
 .box2 {
   border-radius: 10px;
-  margin: 20px 0;
-  width: 35%;
-  height: 190px;
+  width: 40%;
   background-image: url(./images/box2.jpeg);
   background-repeat: no-repeat;
   background-position: 50%;
@@ -810,14 +825,19 @@ body {
 }
 .container1-2 {
   display: flex;
+  gap: 10px;
   width: 100%;
+  flex: 4;
+}
+.div-box1 {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  flex: 1;
 }
 .box3 {
   border-radius: 10px;
-  margin: 20px;
-  margin-top: 0;
-  width: 205px;
-  height: 200px;
+  flex: 1;
   background-image: url(./images/box3.jpeg);
   background-repeat: no-repeat;
   background-position: 0;
@@ -826,20 +846,19 @@ body {
 }
 .box4 {
   border-radius: 10px;
-  margin: 20px;
-  margin-top: 0;
-  width: 205px;
-  height: 200px;
+  flex: 1;
   background-image: url(./images/box4.jpeg);
   background-repeat: no-repeat;
   background-position: 0;
   background-size: cover;
 }
+.div-box2 {
+  display: flex;
+  flex: 1;
+}
 .box5 {
   border-radius: 10px;
-  margin-top: 0;
-  width: 245px;
-  height: 420px;
+  width: 100%;
   background-image: url(./images/box5.webp);
   background-repeat: no-repeat;
   background-position: 0;
@@ -847,13 +866,12 @@ body {
 }
 .container1-3 {
   display: flex;
+  gap: 10px;
+  flex: 2;
 }
 .box6 {
   border-radius: 10px;
-  margin: 20px;
-  margin-top: 0;
-  width: 55%;
-  height: 190px;
+  width: 60%;
   background-image: url(./images/box6.webp);
   background-repeat: no-repeat;
   background-position: 100%;
@@ -861,10 +879,7 @@ body {
 }
 .box7 {
   border-radius: 10px;
-  margin: 20px 0;
-  margin-top: 0;
-  width: 35%;
-  height: 190px;
+  width: 40%;
   background-image: url(./images/box7.jpeg);
   background-repeat: no-repeat;
   background-position: 50%;
@@ -872,13 +887,14 @@ body {
 }
 .container2 {
   width: 28%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 .box8 {
   border-radius: 10px;
-  margin: 20px;
-  margin-left: 10px;
   width: 100%;
-  height: 190px;
+  flex: 2;
   background-image: url(./images/box8.jpeg);
   background-repeat: no-repeat;
   background-position: 100%;
@@ -886,10 +902,8 @@ body {
 }
 .SuperShy-EP-img {
   border-radius: 10px;
-  margin: 20px;
-  margin-left: 10px;
   width: 100%;
-  height: 420px;
+  flex: 4;
   background-image: url(./images/box9.webp);
   background-repeat: no-repeat;
   background-position: 100%;
@@ -897,10 +911,8 @@ body {
 }
 .box10 {
   border-radius: 10px;
-  margin: 20px;
-  margin-left: 10px;
   width: 100%;
-  height: 190px;
+  flex: 2;
   background-image: url(./images/box10.webp);
   background-repeat: no-repeat;
   background-position: 5%;
@@ -909,28 +921,33 @@ body {
 }
 .container3 {
   width: 39%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 .container3-1 {
   display: flex;
+  gap: 10px;
+  flex: 3;
 }
 .box11 {
   border-radius: 10px;
-  margin-left: 30px;
-  margin-top: 20px;
-  margin-right: 20px;
   width: 50%;
-  height: 300px;
   background-image: url(./images/box11.jpeg);
   background-repeat: no-repeat;
   background-position: 100%;
   background-size: cover;
 }
+.div-box3 {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  flex: 1;
+}
 .box12 {
   border-radius: 10px;
-  margin-top: 20px;
-  margin-right: 20;
-  width: 225px;
-  height: 145px;
+  width: 100%;
+  flex: 1;
   background-image: url(./images/box12.jpeg);
   background-repeat: no-repeat;
   background-position: 100%;
@@ -938,10 +955,8 @@ body {
 }
 .box13 {
   border-radius: 10px;
-  margin-top: 10px;
-  margin-right: 20px;
-  width: 225px;
-  height: 145px;
+  width: 100%;
+  flex: 1;
   background-image: url(./images/box13.jpeg);
   background-repeat: no-repeat;
   background-position: 100%;
@@ -949,15 +964,12 @@ body {
 }
 .container3-2 {
   display: flex;
+  gap: 10px;
+  flex: 3;
 }
 .box14 {
   border-radius: 10px;
-  margin: 30px;
-  margin-top: 20px;
-  margin-right: 20px;
-  margin-bottom: 20px;
   width: 50%;
-  height: 310px;
   background-image: url(./images/box14.png);
   background-repeat: no-repeat;
   background-position: 100%;
@@ -966,10 +978,7 @@ body {
 }
 .box15 {
   border-radius: 10px;
-  margin-top: 20px;
-  margin-right: 20px;
-  width: 225px;
-  height: 310px;
+  flex: 1;
   background-image: url(./images/box15.webp);
   background-repeat: no-repeat;
   background-position: 100%;
@@ -977,14 +986,12 @@ body {
 }
 .container3-3 {
   display: flex;
+  gap: 10px;
+  flex: 2;
 }
 .box16 {
   border-radius: 10px;
-  margin: 30px;
-  margin-right: 20px;
-  margin-top: 0px;
-  width: 37%;
-  height: 190px;
+  width: 40%;
   background-image: url(./images/box16.jpeg);
   background-repeat: no-repeat;
   background-position: 50%;
@@ -992,8 +999,7 @@ body {
 }
 .box17 {
   border-radius: 10px;
-  width: 51%;
-  height: 190px;
+  flex: 1;
   background-image: url(./images/box17.jpeg);
   background-repeat: no-repeat;
   background-position: 100%;
@@ -1040,7 +1046,7 @@ body {
 }
 #HowSweet {
   width: 100%;
-  height: 820px;
+  height: 940px;
   background-color: #000000;
 }
 .HowSweet-main-logo {
@@ -1103,7 +1109,7 @@ body {
 /* //Hotsweet */
 #Supernatural {
   width: 100%;
-  height: 820px;
+  height: 940px;
   background-color: #000000;
 }
 .Supernatural-main-logo {
@@ -1160,14 +1166,18 @@ body {
   height: 55px;
   transform: translate(-15%, 40%);
 }
+
 /* //Supernatural */
+
+/* ===== SLIDER PAGE (앨범 뷰) ===== */
 #slider-page {
   width: 100%;
-  height: 820px;
+  height: 940px;
   background-image: url(./images/album-slide-img.webp);
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
+  overflow: hidden;
 }
 
 .container {
@@ -1182,88 +1192,62 @@ body {
   overflow: hidden;
 }
 
+/* Apple Glass / Glassmorphism 슬라이드 카드 */
 .slide {
   transition: 0.5s;
   width: 260px;
   height: 340px;
-  box-shadow: 0 15px 50px rgba(0, 0, 0, 0.3);
   position: absolute;
-  border-radius: 10px;
+  border-radius: 20px;
   top: 25%;
   left: 42%;
   transform: translateX(-50%) translateY(-50%);
-  background-color: rgba(172, 172, 172, 0.7);
+  /* Apple Glassmorphism */
+  background: rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(24px) saturate(180%);
+  -webkit-backdrop-filter: blur(24px) saturate(180%);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2),
+    inset 0 1px 0 rgba(255, 255, 255, 0.25);
 }
 
-.slide-bg1 {
-  margin: 0 auto;
-  margin-top: 20px;
-  width: 200px;
-  height: 200px;
-  border-radius: 10px;
-  background-image: url(./images/NewJeans1.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-.slide-bg2 {
-  margin: 0 auto;
-  margin-top: 20px;
-  width: 200px;
-  height: 200px;
-  border-radius: 10px;
-  background-image: url(./images/NewJeans1.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-.slide-bg3 {
-  margin: 0 auto;
-  margin-top: 20px;
-  width: 200px;
-  height: 200px;
-  border-radius: 10px;
-  background-image: url(./images/OMG-img.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-.slide-bg4 {
-  margin: 0 auto;
-  margin-top: 20px;
-  width: 200px;
-  height: 200px;
-  border-radius: 10px;
-  background-image: url(./images/box9.webp);
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-.slide-bg5 {
-  margin: 0 auto;
-  margin-top: 20px;
-  width: 200px;
-  height: 200px;
-  border-radius: 10px;
-  background-image: url(./images/Hotsweet1.webp);
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-.slide-bg6 {
-  margin: 0 auto;
-  margin-top: 20px;
-  width: 200px;
-  height: 200px;
-  border-radius: 10px;
-  background-image: url(./images/Hotsweet1.webp);
-  background-repeat: no-repeat;
-  background-size: cover;
-}
+.slide-bg1,
+.slide-bg2,
+.slide-bg3,
+.slide-bg4,
+.slide-bg5,
+.slide-bg6,
 .slide-bg7 {
   margin: 0 auto;
   margin-top: 20px;
   width: 200px;
   height: 200px;
-  border-radius: 10px;
-  background-image: url(./images/Supernatural-EP_logo.webp);
+  border-radius: 14px;
   background-repeat: no-repeat;
   background-size: cover;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.25);
+}
+
+.slide-bg1 {
+  background-image: url(./images/NewJeans1.jpg);
+}
+.slide-bg2 {
+  background-image: url(./images/NewJeans1.jpg);
+}
+.slide-bg3 {
+  background-image: url(./images/OMG-img.jpg);
+}
+.slide-bg4 {
+  background-image: url(./images/box9.webp);
+}
+.slide-bg5 {
+  background-image: url(./images/Hotsweet1.webp);
+}
+.slide-bg6 {
+  background-image: url(./images/Hotsweet1.webp);
+}
+.slide-bg7 {
+  background-image: url(./images/Supernatural-EP_logo.webp);
 }
 
 .slide p {
@@ -1271,14 +1255,15 @@ body {
   font-size: 19px;
   margin-left: 27px;
   margin-top: 5px;
-  color: #272727;
+  color: #ffffff;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
 }
 .slide a {
   font-family: "GmarketSansMedium";
   font-weight: 400;
   font-size: 17px;
   margin-left: 27px;
-  color: #4b4b4b;
+  color: rgba(255, 255, 255, 0.7);
 }
 
 .slide:nth-of-type(1) {
@@ -1303,115 +1288,69 @@ body {
   transform: translateX(600px) translateZ(-100px) scale(0.9);
 }
 
+/* 기존 Left/Right 버튼 숨김 (album-controls로 대체) */
 .buttons {
-  position: absolute;
-  z-index: 1;
-  bottom: 1em;
-  left: 50%;
-  transform: translate(-50%);
-  margin-bottom: 150px;
+  display: none;
 }
 
-.buttons button {
-  font-family: "ChosunSg";
-  background-color: rgba(0, 0, 0, 0.4);
-  border: 1px solid white;
-  border-radius: 12px;
-  background-color: transparent;
-  color: white;
-  padding: 10px 20px;
-  font-size: 25px;
-  cursor: pointer;
-  margin: 10px;
-  transition: all 0.3s ease;
-}
-.buttons button:hover {
-  border-color: lightgray;
-  color: lightgray;
-}
-.audio-controls {
+/* 앨범 컨트롤 (⏮ 이전 | ⏸ 정지/재생 | ⏭ 다음) */
+.album-controls {
   position: absolute;
-  bottom: 10%;
+  z-index: 10;
+  bottom: 120px;
   left: 50%;
   transform: translateX(-50%);
-  width: 300px;
-  text-align: center;
-  z-index: 1000;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  /* Glass 효과 컨트롤바 */
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(20px) saturate(180%);
+  -webkit-backdrop-filter: blur(20px) saturate(180%);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 50px;
+  padding: 12px 32px;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.15);
 }
 
-.controls {
+.album-controls button {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 22px;
+  cursor: pointer;
+  padding: 8px 14px;
+  border-radius: 50%;
+  transition: all 0.2s ease;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.play-button {
-  background-color: #000;
-  color: #fff;
-  border: none;
-  padding: 10px 20px;
-  font-size: 18px;
-  cursor: pointer;
-  margin-right: 10px;
-  border-radius: 5px;
+.album-controls button:hover {
+  background: rgba(255, 255, 255, 0.2);
 }
 
-.play-button:hover {
-  background-color: #444;
-}
-
-.progress-bar {
-  width: 200px;
-  height: 5px;
-  cursor: pointer;
-  border-radius: 5px;
-  background: #ddd;
-  -webkit-appearance: none;
-  appearance: none;
-}
-
-.progress-bar::-webkit-slider-thumb {
-  width: 10px;
-  height: 10px;
-  background: #fff;
+.album-controls .pause-play-btn {
+  font-size: 28px;
+  width: 56px;
+  height: 56px;
+  background: rgba(255, 255, 255, 0.15);
   border-radius: 50%;
-  cursor: pointer;
 }
 
-.progress-bar::-moz-range-thumb {
-  width: 10px;
-  height: 10px;
-  background: #fff;
-  border-radius: 50%;
-  cursor: pointer;
+.album-controls .pause-play-btn:hover {
+  background: rgba(255, 255, 255, 0.3);
 }
-#track1 {
+
+#album-audio {
   display: none;
 }
-#play-stop-button {
-  margin-top: 20px;
-  font-size: 22px;
-  background-color: transparent;
-  border: none;
-  color: rgb(0, 0, 0);
-  cursor: pointer;
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-}
-#progress-bar {
-  width: 200px;
-  margin-left: 25px;
-  margin-top: 35px;
-  background-color: #ffffff;
-  border-radius: 5px;
-  height: 8px;
-  cursor: pointer;
-}
 
+/* ===== END PAGE ===== */
 #end-page {
   width: 100%;
-  height: 820px;
+  height: 940px;
   background-image: url(./images/end-page.webp);
   background-repeat: no-repeat;
   background-position: center 60%;
@@ -1432,4 +1371,54 @@ body {
   font-weight: 100;
   position: relative;
   top: -40px;
+}
+
+/* ===== 풀스크린 모드 ===== */
+:fullscreen #firstpage,
+:-webkit-full-screen #firstpage {
+  height: 100vh;
+}
+:fullscreen #introduction,
+:-webkit-full-screen #introduction {
+  height: 100vh;
+}
+:fullscreen #Contents,
+:-webkit-full-screen #Contents {
+  height: 100vh;
+}
+:fullscreen #NewJeans,
+:-webkit-full-screen #NewJeans {
+  height: 100vh;
+}
+:fullscreen #OMG,
+:-webkit-full-screen #OMG {
+  height: 100vh;
+}
+:fullscreen #GetUp,
+:-webkit-full-screen #GetUp {
+  height: 100vh;
+}
+:fullscreen #HowSweet,
+:-webkit-full-screen #HowSweet {
+  height: 100vh;
+}
+:fullscreen #Supernatural,
+:-webkit-full-screen #Supernatural {
+  height: 100vh;
+}
+:fullscreen #slider-page,
+:-webkit-full-screen #slider-page {
+  height: 100vh;
+}
+:fullscreen #end-page,
+:-webkit-full-screen #end-page {
+  height: 100vh;
+}
+:fullscreen #nav,
+:-webkit-full-screen #nav {
+  display: none;
+}
+:fullscreen #wrap,
+:-webkit-full-screen #wrap {
+  padding-top: 0;
 }

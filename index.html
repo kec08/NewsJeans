@@ -269,118 +269,42 @@
       />
       <div id="slider-page">
         <div class="container">
-          <div class="slide">
+          <div class="slide" data-src="./MP3/Attention.mp3">
             <div class="slide-bg1"></div>
             <p>Attention</p>
             <a>뉴진스</a>
-            <button id="play-stop-button">
-              <i class="fa-solid fa-play"></i>
-            </button>
-            <audio id="track1" src="./MP3/Attention.mp3"></audio>
-            <input
-              type="range"
-              id="progress-bar"
-              value="0"
-              max="100"
-              step="0.1"
-            />
           </div>
-          <div class="slide">
+          <div class="slide" data-src="./MP3/Hype Boy.mp3">
             <div class="slide-bg2"></div>
             <p>Hype boy</p>
             <a>뉴진스</a>
-            <button id="play-stop-button">
-              <i class="fa-solid fa-play"></i>
-            </button>
-            <audio id="track1" src="./MP3/Hype Boy.mp3"></audio>
-            <input
-              type="range"
-              id="progress-bar"
-              value="0"
-              max="100"
-              step="0.1"
-            />
           </div>
-          <div class="slide">
+          <div class="slide" data-src="./MP3/OMG.mp3">
             <div class="slide-bg3"></div>
             <p>OMG</p>
             <a>뉴진스</a>
-            <button id="play-stop-button">
-              <i class="fa-solid fa-play"></i>
-            </button>
-            <audio id="track1" src="./MP3/OMG.mp3"></audio>
-            <input
-              type="range"
-              id="progress-bar"
-              value="0"
-              max="100"
-              step="0.1"
-            />
           </div>
-          <div class="slide">
+          <div class="slide" data-src="./MP3/Super Shy.mp3">
             <div class="slide-bg4"></div>
             <p>Super Shy</p>
             <a>뉴진스</a>
-            <button id="play-stop-button">
-              <i class="fa-solid fa-play"></i>
-            </button>
-            <audio id="track1" src="./MP3/Super Shy.mp3"></audio>
-            <input
-              type="range"
-              id="progress-bar"
-              value="0"
-              max="100"
-              step="0.1"
-            />
           </div>
-          <div class="slide">
+          <div class="slide" data-src="./MP3/How Sweet.mp3">
             <div class="slide-bg5"></div>
             <p>How Sweet</p>
             <a>뉴진스</a>
-            <button id="play-stop-button">
-              <i class="fa-solid fa-play"></i>
-            </button>
-            <audio id="track1" src="./MP3/How Sweet.mp3"></audio>
-            <input
-              type="range"
-              id="progress-bar"
-              value="0"
-              max="100"
-              step="0.1"
-            />
           </div>
-          <div class="slide">
+          <div class="slide" data-src="./MP3/Bubble Gum.mp3">
             <div class="slide-bg6"></div>
             <p>Bubble Gum</p>
             <a>뉴진스</a>
-            <button id="play-stop-button">
-              <i class="fa-solid fa-play"></i>
-            </button>
-            <audio id="track1" src="./MP3/Bubble Gum.mp3"></audio>
-            <input
-              type="range"
-              id="progress-bar"
-              value="0"
-              max="100"
-              step="0.1"
-            />
           </div>
-          <div class="slide">
+          <div class="slide" data-src="./MP3/Supernatural.mp3">
             <div class="slide-bg7"></div>
-            <p>Superntural</p>
+            <p>Supernatural</p>
             <a>뉴진스</a>
-            <button id="play-stop-button">
-              <i class="fa-solid fa-play"></i>
-            </button>
-            <audio id="track1" src="./MP3/Supernatural.mp3"></audio>
-            <input
-              type="range"
-              id="progress-bar"
-              value="0"
-              max="100"
-              step="0.1"
-            />
           </div>
+          <audio id="album-audio"></audio>
         </div>
         <div class="buttons">
           <button class="next">
@@ -390,12 +314,22 @@
             Right <i class="fa-solid fa-chevron-right"></i>
           </button>
         </div>
+        <div class="album-controls">
+          <button class="ctrl-prev" title="이전 곡">
+            <i class="fa-solid fa-backward-step"></i>
+          </button>
+          <button class="pause-play-btn" title="정지/재생">
+            <i class="fa-solid fa-pause"></i>
+          </button>
+          <button class="ctrl-next" title="다음 곡">
+            <i class="fa-solid fa-forward-step"></i>
+          </button>
+        </div>
       </div>
 
       <div id="end-page">
         <div class="end-page-text">
           <h1>Thanks For Watching</h1>
-          <p>NewJeans Never Die</p>
         </div>
       </div>
     </main>
