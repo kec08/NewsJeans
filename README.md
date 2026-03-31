@@ -1,4 +1,4 @@
-# NewJeans Never Die
+# NewsJeans
 
 > Always Fresh, Always Bold
 
